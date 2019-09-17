@@ -50,12 +50,22 @@ def main():
     
     welcome( user_name )
 
-    
-#    while None == ( sel = load_game() ):
+    while True :
+        sel = load_game()
+        if "1" == sel :
+            print ("Game1")
+        elif "2" == sel :
+            print ("Game2")
+        elif "3" == sel :
+            print ("Game3")
+        elif "3" == sel:
+            return
+
+
 
             
             
-            }
+
         
 
     #color_helper()
