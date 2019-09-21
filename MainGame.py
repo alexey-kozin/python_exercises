@@ -1,5 +1,7 @@
-from Live import print_banner , welcome , input_name
-
+from Live import print_banner , welcome , input_name , load_game
+from game1 import g1
+from game2 import g2
+from game3 import g3
 
 def main():
     
@@ -15,20 +17,15 @@ def main():
     while True :
         sel = load_game()
         if "1" == sel :
-            print ("Game1")
+            g1()
         elif "2" == sel :
-            print ("Game2")
+            g2()
         elif "3" == sel :
-            print ("Game3")
+            g3()
         elif "3" == sel:
             return
-
-
-
-            
-            
-
-        
+        elif "Q" == sel:
+            return
 
     #color_helper()
 

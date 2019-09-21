@@ -12,6 +12,7 @@ class bc:
     ENDC    = '\033[0m'
     BOLD    = '\033[1m'
     UNDERLINE = '\033[4m'
+    CLS  = '\033[2J'
 
 
 
@@ -64,6 +65,18 @@ def input_name():
 			continue
 					
 		return n	
+
+
+def input_from_array( prompt , arr ):
+
+	while True:
+		print( prompt )
+		ret = str(input())
+		if ret in arr :
+			return ret
+		else:
+			print( "incorrect input , try again")
+
 
 
 #def select_game():
