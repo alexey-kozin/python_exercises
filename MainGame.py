@@ -16,15 +16,15 @@ def main():
 
     while True :
         sel = load_game()
-        if "1" == sel :
+        if '1' == sel :
             g1()
-        elif "2" == sel :
+        elif '2' == sel :
             g2()
-        elif "3" == sel :
+        elif '3' == sel :
             g3()
-        elif "3" == sel:
+        elif '3' == sel:
             return
-        elif "Q" == sel:
+        elif 'Q' == sel:
             return
 
     #color_helper()

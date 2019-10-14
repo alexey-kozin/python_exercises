@@ -12,7 +12,8 @@ class bc:
     ENDC    = '\033[0m'
     BOLD    = '\033[1m'
     UNDERLINE = '\033[4m'
-    CLS  = '\033[2J'
+    CLS  = '\033[2J',
+    CLR_LN = '\033[2K'
 
 
 

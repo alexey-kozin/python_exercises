@@ -19,11 +19,11 @@ def load_game():
 	print("Please choose a game to play:")
 	print("1." + bc.GREEN36 + bc.BOLD + " Memory Game " + bc.ENDC + "- a sequence of numbers will appear for 1 second and you have to guess it back")
 	print("2." + bc.OKBLUE + bc.BOLD + " Guess Game " + bc.ENDC + "- guess a number and see if you chose like the computer")
-	print("3." + bc.ZIAN + bc.BOLD + " Weather Roulette " + bc.ENDC + "- guess the current temperature currently in Jerusalem")
+	print("3." + bc.ZIAN + bc.BOLD + " Currency Roulette " + bc.ENDC + "- guess the current exchange rate from USD to ILS")
 	print(bc.FAIL + bc.BOLD + "Q" + bc.ENDC + " For Exit")
 
 	try:
-		sel = str(input("User select : "))
+		sel = input("User select : ")
 		if len(sel) != 1:
 			raise Exception('Incorrect input')
 		if (sel != '1') and (sel != '2') and (sel != '3') and (sel != 'Q'):
